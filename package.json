@@ -18,11 +18,11 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.13",
     "serverless-http": "^2.7.0",
+    "serverless-offline": "^8.2.0",
     "serverless-plugin-typescript-express": "^1.0.8"
   },
   "devDependencies": {
     "typescript": "^4.5.2",
-    "tsc-watch": "^4.5.0",
-    "serverless-offline": "^8.2.0"
+    "tsc-watch": "^4.5.0"
   }
 }
