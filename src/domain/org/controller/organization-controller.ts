@@ -48,18 +48,18 @@ export class OrganizationController extends Controller {
 //     }
 // }
 //
-export const create: RequestHandler = async (req, res, next) => {
-    try {
-        const organizationReq = {
-            name: req?.body?.name,
-            description: req?.body?.description,
-            address: req?.body?.address,
-        } as OrganizationDocument
-        res.send(await OrganizationService.create(organizationReq));
-    } catch (e) {
-        next();
-    }
-}
+// export const create: RequestHandler = async (req, res, next) => {
+//     try {
+//         const organizationReq = {
+//             name: req?.body?.name,
+//             description: req?.body?.description,
+//             address: req?.body?.address,
+//         } as OrganizationDocument
+//         res.send(await OrganizationService.create(organizationReq));
+//     } catch (e) {
+//         next();
+//     }
+// }
 //
 // export const update: RequestHandler = async (req, res, next) => {
 //     try {
