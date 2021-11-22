@@ -1,11 +1,17 @@
 import express from 'express';
+import * as OrganizationController from '../domain/org/controller/organization-controller';
 
 const orgRouter = express.Router();
 
 orgRouter
     .route('/')
-    .get(async (req, res) => {
-        res.send('Hello from ORG')
-    });
+    .get(OrganizationController.findAll)
+    .post(OrganizationController.create);
+
+orgRouter
+    .route('/:id')
+    .get(OrganizationController.findById)
+    .post(OrganizationController.update)
+    .delete(OrganizationController.remove);
 
 export default orgRouter;
